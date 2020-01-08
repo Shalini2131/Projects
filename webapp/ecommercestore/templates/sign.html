@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        document.getElementById("signup").onclick = function () {
+            location.href = "http://127.0.0.1:8000";
+        };
+
+        function validate() {
+            var password = document.getElementById("txtPassword").value;
+            var confirmPassword = document.getElementById("txtConfirmPassword").value;
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            location.href = "http://127.0.0.1:8000"
+        };
+    </script>
+    <style>
+        html {
+            background-image: linear-gradient(#D83140, black);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .form {
+            text-align: center;
+            margin-top: 3%;
+            /* background-image: linear-gradient(black,pink); */
+        }
+
+        /* html{
+                background-image: linear-gradient(blue);
+                background-position: center;
+                background-repeat: no_repeat;
+                height : 100%;
+            } */
+        .form {
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        #b1 {
+            background-color: gray;
+            align-content: center;
+            text-align: center;
+        }
+
+        #img {
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        #b5 {
+            padding-right: 6%;
+        }
+
+        #b4 {
+            padding-right: 2%;
+        }
+
+        #b6 {
+            padding-right: 3%;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="sign.css">
+</head>
+
+<body>
+    <div id="img">
+        <a href="https://fontmeme.com/calligraphy-fonts/">
+            <img src="https://fontmeme.com/permalink/200107/a7d891b7804a984b443614b975b3317e.png"
+                alt="calligraphy-fonts" border="0">
+        </a>
+    </div>
+    <form class="form">
+        <div id="b2">
+            Name :
+            <input type="text" placeholder="Enter Name" value="" required>
+        </div>
+        <br>
+        <div id="b3">
+            Email :
+            <input type="email" placeholder="Enter mail id" value="" required>
+        </div>
+        <br>
+        <div id="b4">
+            Password :
+            <input type="password" placeholder="password" id="txtPassword" required>
+        </div>
+        <br>
+        <div id="b5">
+            Confirm password :
+            <input type="password" placeholder="confirm password" id="txtConfirmPassword" required>
+        </div>
+        <br>
+        <!-- <div id="b6">
+            <input type="checkbox" name="remember" required> I Accept Terms&Condtions
+        </div> -->
+        <br>
+        <button id="signup" onclick="return validate()">SignUp</button>
+    </form>
+
+</body>
+
+</html>

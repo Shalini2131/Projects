@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    html {
+        background-image: linear-gradient(#D83140, black);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .form {
+        text-align: center;
+        margin-top: 3%;
+        /* background-image: linear-gradient(black,pink); */
+    }
+
+    #b1 {
+        background-color: gray;
+        align-content: center;
+        text-align: center;
+    }
+
+    #img {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    #b5 {
+        padding-right: 6%;
+    }
+
+    #b4 {
+        padding-right: 2%;
+    }
+
+    #b6 {
+        padding-right: 3%;
+    }
+</style>
+<script>
+    document.getElementById("log").onclick = function () {
+        location.href = "http://127.0.0.1:8000";
+    };
+</script>
+
+<head>
+
+</head>
+
+<body>
+    <div id="img">
+        <a href="https://fontmeme.com/calligraphy-fonts/">
+            <img src="https://fontmeme.com/permalink/200107/a7d891b7804a984b443614b975b3317e.png"
+                alt="calligraphy-fonts" border="0">
+        </a>
+    </div>
+    <form class="form">
+
+        <br>
+        <div id="b3">
+            Email :
+            <input type="email" placeholder="enter mail id" value="" required>
+        </div>
+        <br>
+        <div id="b4">
+            Password :
+            <input type="password" placeholder="pwd" id="txtPassword" required>
+        </div>
+        <br>
+        <button id="log" class="logi">LOGIN</button>
+    </form>
+
+</body>
+
+</html>
